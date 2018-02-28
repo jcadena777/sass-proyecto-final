@@ -1,3 +1,5 @@
+include ../config/config
+block config
 <!DOCTYPE html>
 html(lang="es")
   head
@@ -5,8 +7,8 @@ html(lang="es")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title
-    link(href="css/styles.css")
-  body
+    link(rel="stylesheet" href="css/styles.css")
+  body(class=currentPage)
     block header
     block nav
     block main

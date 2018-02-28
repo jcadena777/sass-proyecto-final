@@ -1,1 +1,16 @@
-include template/template
+extends template/template
+block config
+  - currentPage = "login-page"
+block main
+  .main-home
+    img(src='img/logo.png' alt='logo').logo
+    form.login-form
+      .login-form__item
+        label(for='username').login-form__label Nombre de usuario
+        input(type='text' name='username' id='username').login-form__input
+      .login-form__item
+        label(for='password').login-form__label Contraseña
+        input(type='text' name='password' id='password').login-form__input
+      input(type='submit' value='ingresar').login-form__submit.button.cta
+    .reset-password ¿Has olvidado tu contraseña? 
+      a(href='#') Recuperar
