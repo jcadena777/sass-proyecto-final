@@ -1,2 +1,47 @@
 // Aquí se guardarán las variables
-$color: ();
+
+// ===Importar tipografía===
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400);
+
+// ===Fuentes===
+
+$main-font: "Ubuntu", sans-serif;
+$light-font: 300;
+$normal-font: 400;
+
+// ===Tamaños de fuente===
+// Convertir pixels a em
+@function em($el, $parent: 16px) {
+  @return ($el / $parent) * 1em;
+}
+//--------------------------------
+$base-font-size: em(14px);
+$h3-font-size: $base-font-size * 1.15;
+$h2-font-size: $base-font-size * 1.35;
+$h1-font-size: $base-font-size * 1.7;
+
+// ===Colores===
+
+$colors: (
+  base-blue: #00b1f3,
+  dark-blue: #03151f,
+  midium-blue: #006bab,
+  light-blue: #29daff,
+  base-red: #ff3532,
+  light-red: #ff4946,
+  dark-gray: #19242b,
+  light-gray: #cdcdcd,
+  success: #00cb30,
+  white: #ffffff
+);
+
+// Seleccionar el color
+// values allowed: base-blue, dark-blue, midium-blue, light-blue, base-red, light-red, dark-gray, light-gray, success, white.
+@function color($color) {
+  @return map-get($colors, $color);
+}
+// Función para obtener imágenes
+@function img($img) {
+  @return url("../img/#{$img}");
+}
