@@ -332,6 +332,13 @@ h3 {
     background: #ff3532;
     color: #ffffff; }
 
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #03151f; }
+
 .logo {
   width: 10.375em;
   display: block;
@@ -365,10 +372,3 @@ h3 {
     color: #ff3532;
     display: inline-block;
     margin-left: 0.5em; }
-
-body {
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #03151f; }
