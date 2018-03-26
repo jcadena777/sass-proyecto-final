@@ -1,30 +1,30 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-size: $base-font-size;
-  font-family: $main-font;
-  line-height: 1.5;
-  color: color(dark-gray);
+	font-size: $base-font-size;
+	font-family: $main-font;
+	line-height: 1.5;
+	color: color(dark-gray);
 }
 
 h1 {
-  font-size: $h1-font-size;
+	font-size: $h1-font-size;
 }
 
 h2 {
-  font-size: $h2-font-size;
+	font-size: $h2-font-size;
 }
 
 h3 {
-  font-size: $h3-font-size;
+	font-size: $h3-font-size;
 }
 
 h1,
 h2,
 h3 {
-  color: color(dark-gray);
-  line-height: 1.3;
-  font-weight: $light-font;
+	color: color(dark-gray);
+	line-height: 1.3;
+	font-weight: $light-font;
 }

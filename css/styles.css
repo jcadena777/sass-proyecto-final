@@ -1,4 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400);
+@import url(https://file.myfontastic.com/bPyVuZBTQvSTf2WAgP3wDH/icons.css);
+@font-face {
+  font-family: "sass-proyecto-final";
+  src: url("../fonts/sass-proyecto-final.eot");
+  src: url("../fonts/sass-proyecto-final.eot?#iefix") format("embedded-opentype"), url("../fonts/sass-proyecto-final.woff") format("woff"), url("fonts/sass-proyecto-final.ttf") format("truetype"), url("../fonts/sass-proyecto-final.svg#sass-proyecto-final") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "sass-proyecto-final" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "sass-proyecto-final" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-user:before {
+  content: "\61"; }
+
+.icon-password:before {
+  content: "\62"; }
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -372,3 +410,8 @@ h3 {
     color: #ff3532;
     display: inline-block;
     margin-left: 0.5em; }
+
+[class^=icon-]::before {
+  position: relative;
+  top: 2px;
+  margin-right: 0.5em; }
