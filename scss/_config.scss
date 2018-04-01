@@ -4,20 +4,23 @@
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400);
 
-// === Importar iconos ===
-
-@import url(https://file.myfontastic.com/bPyVuZBTQvSTf2WAgP3wDH/icons.css);
-
 // ===Fuentes===
 
 $main-font: "Ubuntu", sans-serif;
 $light-font: 300;
 $normal-font: 400;
 
+// ===Gutter===
+$gutter: 1em;
+
 // ===Tamaños de fuente===
 // Convertir pixels a em
 @function em($el, $parent: 16px) {
 	@return ($el / $parent) * 1em;
+}
+// Convertir pixels a rem
+@function rem($el) {
+	@return ($el / 16px) * 1rem;
 }
 //--------------------------------
 $base-font-size: em(14px);
@@ -30,7 +33,7 @@ $h1-font-size: $base-font-size * 1.7;
 $colors: (
 	base-blue: #00b1f3,
 	dark-blue: #03151f,
-	midium-blue: #006bab,
+	medium-blue: #006bab,
 	light-blue: #29daff,
 	base-red: #ff3532,
 	light-red: #ff4946,
@@ -80,6 +83,12 @@ $colors: (
 }
 .icon-password:before {
 	content: "\62";
+}
+.icon-bars:before {
+	content: "\63";
+}
+.icon-star:before {
+	content: "\64";
 }
 // Seleccionar el color
 // values allowed: base-blue, dark-blue, midium-blue, light-blue, base-red, light-red, dark-gray, light-gray, success, white.

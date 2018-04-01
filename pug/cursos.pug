@@ -1,0 +1,19 @@
+extends template/template
+block config
+  - currentPage = "cursos-page"
+  - title = "Mis cursos"
+block header
+  include blocks/header
+block nav
+  include blocks/nav
+block main
+  - var n = 3
+    while n--
+      .course-card
+        img(src="img/course-poster.png").course-card__img
+        a(href="#").icon-star
+        footer.course-card__footer
+          .course-card__progress
+            .course-card__progress__bar
+            .course-card__progress__label 56% completado
+          .course-card__professor Álvaro Felipe
