@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 90%;
-	z-index: 1000;
+	z-index: z-index(offcanvas);
 	background: color(dark-blue) img('logo-footer.png') no-repeat left bottom / 100px;
 	height: 100%;
 
