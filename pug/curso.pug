@@ -1,0 +1,26 @@
+extends template/template
+block config
+  - currentPage = "course-page"
+  - title = "Sass Desde Cero"
+block header
+  include blocks/header
+block main
+  header.course-header
+    img(src="img/course-poster.png")
+    .course-header__teacher
+      img(src="img/teacher.png").course-header__teacher__img
+      .course-header__teacher__data
+        .course-header__teacher__name Alvaro Felipe
+          small Profesor
+        a(href="#").course-header__teacher__ask.button.cta Solicitar Asesoria
+  .content
+    h1.content-title Contenido del curso
+    .course-content
+      .icon-play.course-content__item 01. Introduccion a Sass
+      .icon-play.course-content__item 02. Sintaxis de Sass
+      .icon-play.course-content__item 03. Los tipos de datos en Sass
+      .icon-play.course-content__item 04. Los mixins
+      .icon-play.course-content__item 05. Funciones en Sass
+      .icon-play.course-content__item 06. Condicionales en Sass
+      .icon-play.course-content__item 07. Iteraciones en Sass
+      .icon-play.course-content__item 08. List y Maps en Sass

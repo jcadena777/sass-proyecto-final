@@ -1,1 +1,73 @@
 // Vista de curso
+
+.course-page {
+	margin-top: 48px;
+}
+
+.course-header {
+	position: relative;
+	margin-bottom: 3em;
+	&::before {
+		content: "";
+		width: 100%;
+		height: rem(40px);
+		background: rgba(#000, 0.5);
+		display: block;
+		position: absolute;
+		// Para ubicarlo en el bottom del poster
+		bottom: 58px;
+	}
+
+	&__teacher {
+		padding: 0 $gutter;
+		margin-top: -50px;
+		display: flex;
+		height: rem(100px);
+		position: relative;
+		z-index: 500;
+
+		&__img {
+			width: rem(100px);
+			border: 1px solid color(white);
+			box-shadow: 0 0 0 1px color(light-gray);
+		}
+
+		&__data {
+			display: flex;
+			flex-direction: column;
+			padding-left: $gutter;
+		}
+
+		&__ask {
+			display: table;
+			margin-top: auto;
+			// Este width está porque no funciona el display: table o no me deja el botón al ancho del texto
+			width: 151px;
+		}
+
+		&__name {
+			font-size: 1.5em;
+			color: color(white);
+			// Para alinear verticalmente
+			margin-top: 0.4em;
+
+			small {
+				font-size: 0.7em;
+				display: inline-block;
+				margin-left: 0.5em;
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+.content {
+	padding: 0 $gutter;
+}
+
+.course-content {
+	&__item {
+		padding: 0.8em 0;
+		border-bottom: 1px solid color(light-gray);
+	}
+}
