@@ -28,8 +28,14 @@ $h3-font-size: $base-font-size * 1.15;
 $h2-font-size: $base-font-size * 1.35;
 $h1-font-size: $base-font-size * 1.7;
 
-// ===Colores===
+// z-index variables
 
+$z-index: (tooltip: 100, modal: 500, overlay: 700, offcanvas: 1000);
+
+@function z-index($val) {
+	@return map-get($z-index,$val);
+}
+// ===Colores===
 $colors: (
 	base-blue: #00b1f3,
 	dark-blue: #03151f,
@@ -42,7 +48,6 @@ $colors: (
 	success: #00cb30,
 	white: #ffffff
 );
-
 // === Iconos ===
 @charset "UTF-8";
 @font-face {
@@ -98,6 +103,9 @@ $colors: (
 }
 .icon-users:before {
 	content: "\67";
+}
+.icon-play:before {
+	content: "\68";
 }
 // Seleccionar el color
 // values allowed: base-blue, dark-blue, midium-blue, light-blue, base-red, light-red, dark-gray, light-gray, success, white.
