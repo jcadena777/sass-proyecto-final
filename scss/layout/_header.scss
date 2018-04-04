@@ -1,0 +1,15 @@
+.main-header {
+	background: color(medium-blue);
+	color: color(white);
+	display: flex;
+	padding: 0 $gutter;
+	height: rem(50px);
+	line-height: rem(50px);
+	font-size: 1.5em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+body {
+	margin-top: 80px;
+}
