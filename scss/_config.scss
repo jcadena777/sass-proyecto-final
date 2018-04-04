@@ -90,6 +90,15 @@ $colors: (
 .icon-star:before {
 	content: "\64";
 }
+.icon-book:before {
+	content: "\65";
+}
+.icon-comments:before {
+	content: "\66";
+}
+.icon-users:before {
+	content: "\67";
+}
 // Seleccionar el color
 // values allowed: base-blue, dark-blue, midium-blue, light-blue, base-red, light-red, dark-gray, light-gray, success, white.
 @function color($color) {
