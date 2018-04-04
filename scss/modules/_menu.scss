@@ -1,1 +1,19 @@
 // Menú principal de la app
+
+.main-menu {
+	list-style: none;
+	margin: ($gutter * 2) 0 0;
+	padding-left: $gutter;
+	padding-right: $gutter;
+
+	&__link {
+		color: rgba(color(white), 0.7);
+		text-decoration: none;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		font-weight: $light-font;
+		display: block;
+		line-height: 3;
+		border-bottom: 1px solid rgba(color(white), .3);
+	}
+}

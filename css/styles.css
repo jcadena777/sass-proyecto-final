@@ -42,6 +42,15 @@
 .icon-star:before {
   content: "\64"; }
 
+.icon-book:before {
+  content: "\65"; }
+
+.icon-comments:before {
+  content: "\66"; }
+
+.icon-users:before {
+  content: "\67"; }
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -393,6 +402,21 @@ body {
     background: #ff3532;
     color: #ffffff; }
 
+.main-menu {
+  list-style: none;
+  margin: 2em 0 0;
+  padding-left: 1em;
+  padding-right: 1em; }
+  .main-menu__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: block;
+    line-height: 3;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
 .course-card {
   margin-left: 1em;
   margin-right: 1em;
@@ -482,4 +506,22 @@ body {
   left: 0;
   width: 90%;
   z-index: 1000;
-  background: #03151f; }
+  background: #03151f url("../img/logo-footer.png") no-repeat left bottom/100px;
+  height: 100%; }
+  .main-nav__header {
+    background: #006bab;
+    color: #ffffff;
+    padding: 2.5em 1em; }
+  .main-nav__user {
+    display: flex; }
+    .main-nav__user__img {
+      width: 3.5em;
+      height: 3.5em;
+      margin-right: 1em; }
+    .main-nav__user__name {
+      font-size: 1.5em;
+      line-height: 1;
+      margin-top: 0.3em; }
+    .main-nav__user__bio {
+      font-size: 0.85em;
+      line-height: 1; }
